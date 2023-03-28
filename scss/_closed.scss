@@ -1,0 +1,93 @@
+.closed{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    height: 224px;
+    z-index: 1000;
+    transition: all 0.3s;
+    &__container{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+.closed-hide{
+    transform: translateY(100%);
+}
+
+.greeting{
+    width: 240px;
+    margin: 20px;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    transition:all 0.3s;
+    &__close{
+        margin-bottom: 10px;
+        opacity: 0;
+        &--icon{
+            background-color: rgba($color1, 0.4);
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            cursor: pointer;
+            transition: all 0.3s;
+            border-radius: 100%;
+        }
+        &--icon:hover{
+            background-color: rgba($color1, 0.3);
+        }
+    }
+    &__text{
+        background-color: $color2;
+        color: #000;
+        font-size: 16px;
+        border-radius: 6px;
+        box-shadow: 0 5px 20px rgba($color1, 0.1);
+        transition: box-shadow 0.3s, opacity 0.3s;
+        cursor: pointer;
+        padding: 15px 20px;
+        width: 100%;
+        line-height: 22px;
+        text-align: left;
+        word-wrap: break-word;
+    }
+    &__text:hover{
+        box-shadow: 0 5px 20px rgba($color1, 0.17);
+    }
+}
+
+.greeting:hover .greeting__close{
+    opacity: 1;
+}
+
+.greeting-animation{
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.bubble{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    box-shadow: 0 0 50px 0 rgba($color1, 0.06);
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s;
+    &__container{
+        height: 100%;
+        width: 100%;
+        &--image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__container:hover &__container--image{
+        opacity: 0.8;
+    }
+}

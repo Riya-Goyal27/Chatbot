@@ -1,0 +1,33 @@
+.opened{
+    position:fixed;
+    right: 0;
+    bottom: 0;
+    width: 410px;
+    height: 569px;
+    z-index: 1000000;
+    transform: translateY(100%);
+    transition: all 0.3s;
+    &__container{
+        width: 370px;
+        height: 530px;
+        margin: 20px;
+        box-shadow: 0 4px 16px rgba($color1, 0.25);
+        border-radius: 15px;
+        overflow: hidden;
+        
+    }
+}
+
+.opened-show{
+    transform: translateY(0);
+}
+
+@media (max-width:410px){
+    .opened{
+        max-width: 100%;
+        &__container{
+            max-width: 100%;
+            margin: 0;
+        }
+    }
+}

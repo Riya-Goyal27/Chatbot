@@ -1,0 +1,129 @@
+.caption{
+    padding: 10px 25px;
+    &__container{
+        display: flex;
+        align-items: center;
+    }
+    &__avatar{
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        margin-right: 6px;
+        overflow: hidden;
+        &--content{
+            height: 100%;
+            width: 100%;
+        }
+        &--image{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &__text{
+        color: $color11;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.botresponse{
+    padding: 0 25px 10px;
+    &__text{
+        background-color: $color2;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 20px;
+        border-bottom-left-radius: 5px;
+        padding: 15px 17px;
+        display: inline-block;
+    }
+}
+
+.botquestion{
+    padding: 0 25px 10px;
+    &__text{
+        background-color: $color2;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 20px;
+        border-top-left-radius: 5px;
+        padding: 15px 17px;
+        display: inline-block;
+    }
+    &__replies{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 15px;
+        &--text{
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: 600;
+            margin: 4px;
+            height: 32px;
+            border: 1px solid $color12;
+            color: $color12;
+            background-color: $color2;
+            border-radius: 16px;
+            padding: 0 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &--text:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+.replies-hide{
+    display: none;
+}
+
+.usercaption{
+    padding: 10px 25px;
+    display: flex;
+    justify-content: end;
+    &__text{
+        color: $color11;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
+.userresponse{
+    padding: 0 25px 10px;
+    display: flex;
+    justify-content: end;
+    &__text{
+        background-color: $color12;
+        color: $color2;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 20px;
+        border-bottom-right-radius: 5px;
+        padding: 15px 17px;
+    }
+}
+
+.start{
+    text-align: center;
+    padding: 10px 0;
+    &__btn{
+        background-color: $color12;
+        color: $color2;
+        border: 0;
+        outline: none;
+        font-size: 16px;
+        font-weight: 600;
+        padding: 12px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    &__btn:hover{
+        opacity: 0.8;
+    }
+}
