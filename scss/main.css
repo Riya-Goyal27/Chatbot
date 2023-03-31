@@ -143,6 +143,7 @@ body {
   flex-direction: column;
 }
 .chatbox__header {
+  background-color: #fff;
   position: relative;
   height: 100px;
   width: 100%;
